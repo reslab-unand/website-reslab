@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Bebas+Neue&family=Kaushan+Script&family=Orbitron&family=Pacifico&family=Poppins:wght@600&display=swap');
+
+@font-face {
+    font-family: "Lazenby";
+    src: url("../font/LazenbyCompSmooth.ttf");
+}
+
+* {
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	/* color: #cb9831; */
+}
+
+:root {
+	--yellow: #cb9831;
+	--black: #000;
+}
+/* Text Color */
+.yellow {
+	color: var(--yellow);
+}
+.black {
+	color: var(--black);
+}
+/* Background Color */
+.bg-yellow {
+	background-color: var(--yellow);
+}
+.bg-black {
+	background-color: var(--black);
+}
+
+.flex {
+	display: flex;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+a {
+	color: inherit;
+}
+
+body {
+	background-color: black;
+	position: relative;
+	min-height: 100vh;
+}
+
+.container {
+	padding: 1rem 50px;
+}
+
+/* Section Header */
+#header {
+	width: inherit;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	/* z-index: 999; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid var(--yellow);
+}
+#logo {
+	display: flex;
+}
+#logo,
+nav,
+#search {
+	flex: 1 1 0;
+}
+nav ul {
+	display: flex;
+	padding: 0;
+	gap: 1rem;
+}
+nav a {
+	font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+}
+nav a:hover {
+	transition: ease-in-out 0.25s;
+	background-color: #cb9831;
+	color: black;
+}
+#search {
+	display: flex;
+	justify-content: flex-end;
+}
+#search div {
+	cursor: pointer;
+}
+
+#link div {
+	flex: 1 1 0;
+}
+
+h1{
+    font-size: 3rem;
+}
+h3{
+    margin-bottom: .5rem;
+}
+
+#social-media{
+    margin-top: .5rem;
+}
+#social-media img{
+    margin-right: 1rem;
+}
+
+#content{
+    min-height: 100vh;
+}
+#jumbo{
+    height: 100%;
+    justify-content: space-between;
+}
+#jumbo div{
+    width: 45%;
+}
