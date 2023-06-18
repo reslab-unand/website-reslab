@@ -82,7 +82,7 @@ nav ul {
 }
 nav a {
 	font-family: 'Bebas Neue';
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 	padding: 0.5rem 1rem;
 	border-radius: 5px;
 }
@@ -126,4 +126,8 @@ h3{
 }
 #jumbo div{
     width: 45%;
+}
+#copyright{
+    font-family: serif;
+    padding-block: 5px;
 }

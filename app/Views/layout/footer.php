@@ -23,11 +23,12 @@
             <p><a href="#">JITCE</a></p>
         </div>
         <div class="black">
-            <h3>Journal & Library</h3>
-            <p><a href="#">Perpustakaan Unand</a></p>
-            <p><a href="#">Scholar Unand</a></p>
-            <p><a href="#">Chipset</a></p>
-            <p><a href="#">JITCE</a></p>
+            <h3>Unknown Category</h3>
+            <p><a href="https://unand.ac.id">Universitas Andalas</a></p>
+            <p><a href="https://fti.unand.ac.id">Fakultas Teknologi Informasi</a></p>
+            <p><a href="https://ce.fti.unand.ac.id">Departement Teknik Komputer</a></p>
+            <p><a href="#">Lembaga Penelitian</a></p>
+            <p><a href="#">Lembaga Penjamin Mutu</a></p>
         </div>
     </div>
     <div id="copyright" class="container flex yellow bg-black justify-content-center">
