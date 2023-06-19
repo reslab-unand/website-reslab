@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-class API extends BaseController
+class Api extends BaseController
 {
-    public function index()
+    public function absensi()
     {
         return view('api');
     }
