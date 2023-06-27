@@ -16,11 +16,12 @@
     $date = date("Y-m-d");
     $time = date("H:i:s");
     // $config = query("SELECT * FROM config")[0];
+    $config["card_mode"] = "read_card";
 
     if($method === "GET"){
         $show = [
             'jam' => strval($date).' '.strval($time),
-            // 'status' => strval($config["card_mode"]),
+            'status' => strval($config["card_mode"]),
             'hari' => strval($day)
             ]; 
         print(json_encode($show));
