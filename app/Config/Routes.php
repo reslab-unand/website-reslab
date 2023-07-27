@@ -31,7 +31,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->match(['GET', 'POST'], '/api/absensi', 'Api::absensi');
-$routes->get(':segment', 'Home::index');
+// $routes->get(':segment', 'Home::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

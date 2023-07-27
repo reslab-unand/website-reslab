@@ -36,6 +36,10 @@ Options -Indexes
 	# Ensure Authorization header is passed along
 	RewriteCond %{HTTP:Authorization} .
 	RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+	# allow phpmyadmin
+	# RewriteCond $1 !^(phpmyadmin)
+	# RewriteRule ^(.*)$ /index.php/$1 [L]
 </IfModule>
 
 <IfModule !mod_rewrite.c>
