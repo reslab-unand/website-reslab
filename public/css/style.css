@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Battambang&family=Bebas+Neue&family=Kaushan+Script&family=Orbitron&family=Pacifico&family=Poppins:wght@600&display=swap');
 
 @font-face {
-    font-family: "Lazenby";
-    src: url("../font/LazenbyCompSmooth.ttf");
+	font-family: 'Lazenby';
+	src: url('../font/LazenbyCompSmooth.ttf');
 }
 
 * {
@@ -38,8 +38,8 @@
 .justify-content-center {
 	justify-content: center;
 }
-.align-items-center{
-    align-items: center;
+.align-items-center {
+	align-items: center;
 }
 a {
 	color: inherit;
@@ -82,7 +82,7 @@ nav ul {
 }
 nav a {
 	font-family: 'Bebas Neue';
-    font-size: 1.25rem;
+	font-size: 1.25rem;
 	padding: 0.5rem 1rem;
 	border-radius: 5px;
 }
@@ -103,31 +103,90 @@ nav a:hover {
 	flex: 1 1 0;
 }
 
-h1{
-    font-size: 3rem;
+h1 {
+	font-size: 3rem;
 }
-h3{
-    margin-bottom: .5rem;
-}
-
-#social-media{
-    margin-top: .5rem;
-}
-#social-media img{
-    margin-right: 1rem;
+h3 {
+	margin-bottom: 0.5rem;
 }
 
-#content{
-    min-height: 100vh;
+#social-media {
+	margin-top: 0.5rem;
 }
-#jumbo{
-    height: 100%;
-    justify-content: space-between;
+#social-media img {
+	margin-right: 1rem;
 }
-#jumbo div{
-    width: 45%;
+
+#content {
+	min-height: 100vh;
+	padding-top: 80px;
 }
-#copyright{
-    font-family: serif;
-    padding-block: 5px;
+#jumbo {
+	height: 100%;
+	justify-content: space-between;
+}
+#jumbo div {
+	width: 45%;
+}
+#copyright {
+	font-family: serif;
+	padding-block: 5px;
+}
+
+/* Form Peminjaman */
+#form-container {
+	width: 100%;
+	color: #fff;
+	/* background: var(--yellow); */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Serif;
+}
+#form-container button {
+	background-color: var(--yellow);
+	padding: 5px 10px;
+	font-family: Poppins;
+	border: none;
+	outline: none;
+}
+
+#form-peminjaman {
+	width: 50%;
+}
+#form-peminjaman label {
+	display: block;
+}
+#form-peminjaman input {
+	font-family: Poppins;
+	width: 100%;
+	padding: 5px 10px;
+	border: none;
+}
+#form-peminjaman input:focus {
+	background-color: var(--yellow);
+	outline: #000;
+}
+.form-control,
+.form-component {
+	margin-bottom: 10px;
+}
+.form-control table {
+	width: 100%;
+}
+.form-component {
+	display: flex;
+	justify-content: space-between;
+}
+#form-peminjaman .form-component input {
+	width: 45%;
+}
+#table-komponen {
+	text-align: center;
+	vertical-align: center;
+}
+#table-komponen th {
+	background-color: var(--yellow);
+	color: var(--black);
+	padding: 10px;
 }

@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+}
+body {
+	width: 21cm;
+	min-height: 29.7cm;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+div {
+	margin-bottom: 1rem;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border-bottom: 5px double black;
+	line-height: 1.15;
+}
+#header div {
+	margin-bottom: 0;
+}
+h3 {
+	margin: 0;
+	text-transform: uppercase;
+}
+#logo_unand,
+#logo_reslab {
+	flex: 1 1 0;
+}
+#text_header {
+	font-size: 12px;
+	flex: 3 3 0;
+}
+
+#bg {
+	print-color-adjust: exact !important;
+	-webkit-print-color-adjust: exact !important;
+	background-image: url('../img/logo_reslab.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 82.5%;
+	opacity: 0;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -99;
+}
+
+#keterangan-surat {
+	display: flex;
+	justify-content: space-between;
+}
+#data-diri table {
+	padding-inline-start: 2rem;
+}
+#data-komponen :is(table, th, td) {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+#data-komponen table {
+	width: 100%;
+}
+
+#aturan {
+	text-align: justify;
+}
+#aturan li {
+	padding-left: 0.5rem;
+}
+
+ul {
+	list-style: '*';
+	padding-inline-start: 10px;
+}
+
+#tanda-tangan {
+	display: flex;
+	justify-content: space-around;
+}
+#koor-inventaris,
+#peminjam {
+	text-align: center;
+}
+
+@media print {
+	body {
+		border: none;
+		print-color-adjust: exact !important;
+		-webkit-print-color-adjust: exact !important;
+	}
+	#bg {
+		opacity: 0.45;
+	}
+	#container {
+		padding: 0.75cm 1.54cm 1cm 1.54cm;
+	}
+	#print-button-container {
+		display: none;
+	}
+}

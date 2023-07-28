@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\Administrasi;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -31,6 +33,11 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->match(['GET', 'POST'], '/api/absensi', 'Api::absensi');
+
+// Administrasi
+$routes->get("peminjaman", "Administrasi::index");
+$routes->post("surat", "Administrasi::surat");
+
 // $routes->get(':segment', 'Home::index');
 /*
  * --------------------------------------------------------------------
