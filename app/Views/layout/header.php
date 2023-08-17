@@ -7,29 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robotics & Embedded System Laboratory</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
-    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="/assets/js/jquery-3.7.0.min.js"></script>
 </head>
 
 <body>
     <section id="header" class="container bg-black">
         <div id="logo">
-            <img src="img/Logo.png" alt="">
+            <img src="/assets/img/Logo.png" alt="Logo Reslab">
         </div>
         <nav>
             <ul>
-                <li><a href="/" class="yellow">Home</a></li>
-                <li><a href="#" class="yellow">Profile</a></li>
-                <li><a href="#" class="yellow">Asisten</a></li>
-                <li><a href="#" class="yellow">Praktikum</a></li>
-                <li><a href="/peminjaman" class="yellow">Administrasi</a></li>
-                <li><a href="#" class="yellow">Berita</a></li>
-                <li><a href="#" class="yellow">Artikel</a></li>
+                <li><a href="<?= base_url(); ?>" class="yellow">Home</a></li>
+                <li><a href="<?= base_url(); ?>profile" class="yellow">Profile</a></li>
+                <li><a href="<?= base_url(); ?>asisten" class="yellow">Asisten</a></li>
+                <li><a href="<?= base_url(); ?>praktikum" class="yellow">Praktikum</a></li>
+                <li><a href="<?= base_url(); ?>administrasi" class="yellow">Administrasi</a></li>
+                <li><a href="<?= base_url(); ?>berita" class="yellow">Berita</a></li>
+                <li><a href="<?= base_url(); ?>artikel" class="yellow">Artikel</a></li>
             </ul>
         </nav>
         <div id="search">
-            <div><img src="img/Vector.png" alt=""></div>
+            <div><img src="/assets/img/Vector.png" alt=""></div>
         </div>
     </section>
 

@@ -35,8 +35,9 @@ $routes->get('/', 'Home::index');
 $routes->match(['GET', 'POST'], '/api/absensi', 'Api::absensi');
 
 // Administrasi
-$routes->get("peminjaman", "Administrasi::index");
-$routes->post("surat", "Administrasi::surat");
+$routes->get("administrasi", "Administrasi::index");
+$routes->post("administrasi/surat", "Administrasi::surat");
+$routes->get("administrasi/tes", "Administrasi::tes");
 
 // $routes->get(':segment', 'Home::index');
 /*
