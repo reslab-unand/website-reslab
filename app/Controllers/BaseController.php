@@ -9,6 +9,10 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
+
+date_default_timezone_set("Asia/Jakarta");
+setlocale(LC_ALL, 'di_ID');
+
 /**
  * Class BaseController
  *
@@ -43,6 +47,12 @@ abstract class BaseController extends Controller
      */
     // protected $session;
 
+    protected $day;
+    protected $time;
+    protected $date;
+    protected $month;
+    protected $year;
+    protected $fullDate;
     /**
      * Constructor.
      */
@@ -54,5 +64,32 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
+
+        $this->day = [
+            "Sunday" => "Minggu",
+            "Monday" => "Senin",
+            "Tuesday" => "Selasa",
+            "Wednesday" => "Rabu",
+            "Thurday" => "Kamis",
+            "Friday" => "Jumat",
+            "Saturday" => "Sabtu",
+        ][date("l")];
+
+        // day in int
+        $this->date = date("d");
+        // month in indonesia
+        $this->month = [
+            "Januari", "Februari",
+            "Maret", "April",
+            "Mei", "Juni",
+            "Juli", "Agustus",
+            "September", "Oktober",
+            "November", "Desember",
+        ][(int)date("m") - 1];
+        // year
+        $this->year = date("Y");
+        // get time jam:menit:seconds
+        $this->time = date("H:i:s");
+        $this->fullDate = $this->date . " " . $this->month . " " . $this->year;
     }
 }

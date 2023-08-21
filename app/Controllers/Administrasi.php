@@ -7,24 +7,23 @@ class Administrasi extends BaseController
 {
     public function index()
     {
-        return view('layout/header')
+        $data = [
+            "title" => "Asisten | Robotics & Embedded System Laboratory"
+        ];
+
+        return view('layout/header', $data)
             . view('administrasi/index')
             . view('layout/footer');
     }
     public function surat()
     {
         if (!$this->request->is("POST")) {
-            return $this->response->setStatusCode(401);
+            return $this->response->setStatusCode(404);
         }
 
-        date_default_timezone_set('Asia/Jakarta');
-
         if (isset($_POST["submit"])) {
-            $day = date("d");
-            $month = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember",][(int)date("m") - 1];
-            $year = date("Y");
 
-            $data["date"] = "$day $month $year";
+            $data["date"] = $this->fullDate;
 
             $data["hal"] = $_POST["jenis"];
             $data["tujuan"] = $_POST["tujuan"];
