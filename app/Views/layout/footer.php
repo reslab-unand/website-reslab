@@ -8,11 +8,11 @@
             <p>Limau Manis, Padang</p>
             <p>Sumatera Barat 25162</p>
             <div id="social-media">
-                <a href="https://www.facebook.com/RESLABUNAND" target="_blank"><img src="img/facebook.png" alt=""></a>
-                <a href="https://www.youtube.com/channel/UCNKWye31NYpaeeYiwzbflfA" target="_blank"><img src="img/youtube.png" alt=""></a>
-                <a href="https://www.instagram.com/reslabunand"><img src="img/instagram.png" alt=""></a>
-                <a href="https://twitter.com/RESLABUNAND" target="_blank"><img src="img/twitter.png" alt=""></a>
-                <a href="https://github.com/reslab-unand" target="_blank"><img src="img/github.png" alt=""></a>
+                <a href="https://www.facebook.com/RESLABUNAND" target="_blank"><img src="<?= base_url("assets/img/facebook.png"); ?>" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCNKWye31NYpaeeYiwzbflfA" target="_blank"><img src="<?= base_url("assets/img/youtube.png"); ?>" alt=""></a>
+                <a href="https://www.instagram.com/reslabunand"><img src="<?= base_url("assets/img/instagram.png"); ?>" alt=""></a>
+                <a href="https://twitter.com/RESLABUNAND" target="_blank"><img src="<?= base_url("assets/img/twitter.png"); ?>" alt=""></a>
+                <a href="https://github.com/reslab-unand" target="_blank"><img src="<?= base_url("assets/img/github.png"); ?>" alt=""></a>
             </div>
         </div>
         <div class="black">
@@ -32,10 +32,11 @@
         </div>
     </div>
     <div id="copyright" class="container flex yellow bg-black justify-content-center">
-        <p>All Right Reservased  &copy; Copyright <?= date('Y'); ?></p>
+        <p>All Right Reservased &copy; Copyright <?= date('Y'); ?></p>
     </div>
 </footer>
 
-<script src="/js/script.js"></script>
+<script src="/assets/js/script.js"></script>
 </body>
+
 </html>

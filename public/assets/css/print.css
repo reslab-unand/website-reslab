@@ -1,6 +1,10 @@
 * {
 	margin: 0;
 }
+:root {
+	--yellow: #cb9831;
+	--black: #000;
+}
 body {
 	width: 21cm;
 	min-height: 29.7cm;
@@ -84,6 +88,23 @@ ul {
 #koor-inventaris,
 #peminjam {
 	text-align: center;
+}
+
+#print-button-container {
+	display: flex;
+	justify-content: center;
+}
+#print-button {
+	width: 80%;
+	color: var(--black);
+	font-weight: bold;
+	background-color: var(--yellow);
+	border: none;
+	padding: 5px 0;
+	transition: all 0.25s ease-in-out;
+}
+#print-button:hover {
+	box-shadow: 1px 1px 10px 2px var(--yellow);
 }
 
 @media print {

@@ -31,14 +31,25 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+// Home
 $routes->get('/', 'Home::index');
-$routes->match(['GET', 'POST'], '/api/absensi', 'Api::absensi');
+
+// API
+$routes->match(["GET", "POST"], '/api/presensi', 'Api::presensi');
+$routes->get("api/tes", "Api::tes");
 
 // Administrasi
-$routes->get("peminjaman", "Administrasi::index");
-$routes->post("surat", "Administrasi::surat");
+$routes->get("administrasi", "Administrasi::index");
+$routes->post("administrasi/surat", "Administrasi::surat");
+$routes->get("administrasi/tes", "Administrasi::tes");
 
-// $routes->get(':segment', 'Home::index');
+// Asisten
+$routes->get("asisten", "Asisten::index");
+$routes->match(["GET", "POST"], "asisten/add-asisten", "Asisten::addAsisten");
+$routes->get("asisten/(:segment)", "Asisten::detail/$1");
+
+$routes->get(':segment', 'Home::maintenance');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

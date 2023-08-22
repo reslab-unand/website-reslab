@@ -1,7 +1,7 @@
 <div id="form-container">
     <h2>Form Peminjaman Barang</h2>
     <!-- <div> -->
-    <form id="form-peminjaman" action="/surat" method="POST" enctype="application/x-www-form-urlencoded">
+    <form id="form-peminjaman" action="/administrasi/surat" method="POST" enctype="application/x-www-form-urlencoded">
 
         <h3>Data Diri</h3>
         <div class="form-control">

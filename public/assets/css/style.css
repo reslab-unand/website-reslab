@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: 'Lazenby';
-	src: url('../font/LazenbyCompSmooth.ttf');
+	src: url('/assets/font/LazenbyCompSmooth.ttf');
 }
 
 * {
@@ -90,6 +90,7 @@ nav a:hover {
 	transition: ease-in-out 0.25s;
 	background-color: #cb9831;
 	color: black;
+	box-shadow: 0px 0px 8px 2px var(--yellow);
 }
 #search {
 	display: flex;
@@ -189,4 +190,13 @@ h3 {
 	background-color: var(--yellow);
 	color: var(--black);
 	padding: 10px;
+}
+
+/* Asisten Page */
+table,
+th,
+td {
+	border: 2px solid var(--yellow);
+	color: var(--yellow);
+	border-collapse: collapse;
 }
