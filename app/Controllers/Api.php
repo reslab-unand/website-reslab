@@ -113,6 +113,7 @@ class Api extends BaseController
 
         // if Method request GET
         $data = [
+            "day" => $this->day,
             "date" => date("Y-m-d"),
             "time" => $this->time,
             "card_mode" => strtolower($this->configModel->getCardMethod())
