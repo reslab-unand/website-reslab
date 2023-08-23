@@ -70,7 +70,7 @@ abstract class BaseController extends Controller
             "Monday" => "Senin",
             "Tuesday" => "Selasa",
             "Wednesday" => "Rabu",
-            "Thurday" => "Kamis",
+            "Thursday" => "Kamis",
             "Friday" => "Jumat",
             "Saturday" => "Sabtu",
         ][date("l")];
