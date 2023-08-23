@@ -2,7 +2,7 @@
     <h2>Form Peminjaman Barang</h2>
     <!-- <div> -->
     <form id="form-peminjaman" action="/administrasi/surat" method="POST" enctype="application/x-www-form-urlencoded">
-
+        <?= csrf_field(); ?>
         <h3>Data Diri</h3>
         <div class="form-control">
             <label for="nama">Nama</label>
